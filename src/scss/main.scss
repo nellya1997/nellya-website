@@ -2,6 +2,7 @@
 @import "./normalize";
 @import "./vars";
 @import "./mixins";
+@import "./func";
 @import "./base";
 //@import "./functions";
 
@@ -9,6 +10,7 @@
 @import "./components/contact-badge";
 @import "./components/socials";
 @import "./components/burger";
+@import "./components/foxyBadge";
 
 // Sections
 @import "./sections/header";
