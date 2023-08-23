@@ -89,17 +89,26 @@
       <section id="first" class="first">
         <div class="container">
           <div class="first__title">
-            <p>На высоте web-разработки</p>
-            <h1><span>сайт</span> <span>с нуля</span></h1>
+            <p class="first__title-subtext">На высоте web-разработки</p>
+            <h1 class="h1"><span>сайт</span> <span>с нуля</span></h1>
             <p class="foxyBadge">Подниму твой бизнес до Эвереста</p>
           </div>
           
           <div class="first__content">
             <span>Нелля Сюняева</span>
             
-            <picture>
-              <img src="" alt="">
-            </picture>
+            <picture class="first__content-picture">
+              <source type="image/webp" media="(min-width: 1023px)" srcset="./src/img/first/photoFirst-desc.webp" alt="Нелля Сюняева">
+              <source type="image/jpg" media="(min-width: 1023px)" srcset="./src/img/first/photoFirst-desc.png" alt="Нелля Сюняева">
+
+              <source type="image/webp" media="(min-width: 767px)" srcset="./src/img/first/photoFirst-mobile.webp" alt="Нелля Сюняева">
+              <source type="image/png" media="(min-width: 767px)" srcset="./src/img/first/photoFirst-mobile.png" alt="Нелля Сюняева">
+
+              <img src="./src/img/first/photoFirst-mobile.png" alt="Нелля Сюняева">
+          </picture>
+          
+          
+          
             <span>Основатель<br>веб-студии</span>
             
 
