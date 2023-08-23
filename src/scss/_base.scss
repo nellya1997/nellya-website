@@ -1,0 +1,78 @@
+@font-face {
+
+  font-family: 'Gilroy';
+  src: url('../font/gilroy-regular.woff2') format('woff2'),
+    url('../fonts/gilroy-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../font/gilroy-medium.ttf') format ('ttf'),
+    url('../font/gilroy-medium.woff2') format('woff2'),
+    url('../font/gilroy-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Gilroy';
+  /* Соответствует значению "почти" bold )) */
+  src: url('../font/gilroy-semibold.woff2') format('woff2'),
+    url('../font/gilroy-semibold.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: local('Playfair'),
+    url('../font/PlayfairDisplay-VariableFont.ttf') format('ttf'),
+    url('../font/PlayfairDisplay-VariableFont.woff') format('woff'),
+    url('../font/PlayfairDisplay-VariableFont.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  color: $fontColor;
+  background-color: $bgColor;
+}
+
+picture {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $fontColor;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}

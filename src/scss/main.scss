@@ -1,0 +1,15 @@
+// Base
+@import "./normalize";
+@import "./vars";
+@import "./mixins";
+@import "./base";
+@import "./functions";
+
+// Blocks
+@import "./components/contact-badge";
+@import "./components/socials";
+@import "./components/burger";
+
+// Sections
+@import "./sections/header";
+@import "./sections/needIt";

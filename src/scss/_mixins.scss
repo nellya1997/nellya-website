@@ -1,0 +1,25 @@
+// FONTS
+@mixin fonty ($size: 22px, $weight: 400, $lineH: 30px) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineH;
+}
+
+// BLOCKS
+@mixin centry($width) {
+    margin: 0 auto;
+    width: $width;
+}
+
+@mixin flexy($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin gridy($columns, $value: max-content, $gap: 0) {
+    display: grid;
+    grid-template-columns: repeat($columns, $value);
+    column-gap: $gap;
+}

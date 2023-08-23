@@ -1,0 +1,10 @@
+.contact-badge {
+  @include flexy(column);
+  gap: 5px;
+
+  &__item {
+    &:first-child {
+      @include fonty(1.13rem, 600, 1.56rem);
+    }
+  }
+}

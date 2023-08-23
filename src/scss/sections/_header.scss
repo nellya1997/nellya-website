@@ -1,0 +1,132 @@
+.header {
+  width: 100%;
+  height: 60px;
+  border: $myBorder;
+  @include flexy(row);
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    font-family: $fontMain;
+    text-decoration: none;
+    color: $boldFontColor;
+  }
+  &__logo {
+    display: none;
+  }
+
+  .nav {
+    transform: translateY(-100vh);
+    transition: transform 0.5s;
+    padding: 0% 10% 35px 10%;
+
+    a,
+    p {
+      color: $fontColor;
+    }
+
+    &_active {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      padding-top: 60px;
+      transform: translateY(0vh);
+      transition: transform 0.4s;
+      background: #e7dae8;
+
+      background-image: url('../img/header/background.png');
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+
+      &__list {
+        width: 100%;
+        padding-bottom: 15px;
+      }
+
+      .contacts {
+        padding: 15px 0;
+        @include fonty(0.88rem, 400, 1.25rem);
+      }
+
+      span {
+        &:first-child {
+          font-weight: 600;
+        }
+      }
+    }
+
+    li {
+      padding: 5px 0;
+    }
+
+    &__link {
+      @include fonty(1rem, 600, 1.25rem);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: fixed;
+    height: auto;
+    padding: 0;
+
+    .nav {
+      @include centry(91.5%);
+      @include flexy(row, space-between);
+      padding: 0px 0px;
+      background-color: initial;
+      border: none;
+      box-shadow: none;
+      transform: translateY(0);
+      transition: transform 0.5s;
+
+      &__list {
+        width: 100%;
+        padding: 10px 0;
+        @include flexy(row, space-between);
+      }
+
+      &__link {
+        //@include fonty(30px, 600, 41px);
+        display: inline-block;
+        font-size: calc(11px + 26 * ((100vw - 768px) / 1920));
+        position: relative;
+      }
+    }
+
+    .contact-badge {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 930px) {
+  .header {
+    // height: 140px;
+
+    .nav__list {
+      width: 67.3%;
+    }
+
+    .nav__contacts {
+      display: initial;
+
+      li:first-child {
+        span {
+          @include fonty(19px, 600);
+        }
+      }
+
+      li:nth-child(2) {
+        span {
+          @include fonty(16px, 400);
+        }
+      }
+    }
+  }
+}

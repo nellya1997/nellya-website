@@ -1,0 +1,15 @@
+.needit {
+  &_container {
+    @include centry(66.4%);
+    border: $myBorder;
+  }
+
+  &_title {
+    font-size: rem(20px);
+
+    span {
+      text-align: center;
+      display: block;
+    }
+  }
+}

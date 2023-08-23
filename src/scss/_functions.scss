@@ -1,0 +1,11 @@
+@function rem($pixels, $min: 12) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($min)) {
+    $min: $min * 1px;
+  }
+  $context: 16px;
+
+  @return #{"max("}#{$pixels / $context * 1rem}#{", "}#{$min}#{")"};
+}

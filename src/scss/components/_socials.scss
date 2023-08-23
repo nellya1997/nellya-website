@@ -1,0 +1,10 @@
+.socials {
+  margin: 0 auto;
+  @include flexy(row, space-between);
+  gap: 10px;
+
+  a {
+    width: 28px;
+    height: 28px;
+  }
+}
