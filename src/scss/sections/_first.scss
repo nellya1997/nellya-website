@@ -1,0 +1,24 @@
+.first {
+    text-align: center;
+    
+    .container {
+        @include centry(80%);
+    }
+    
+    
+    &__title {
+        p {
+            @include fonty(0.88rem, 500, 1.25rem);
+        }
+        
+        h1 {
+            font-family: $fontAccent;
+            //@include fonty(2.5rem, 600, 3.375rem);
+            font-size: rem(40px);
+            
+            color: $titleColor;
+            text-transform: uppercase;
+
+        }
+    }
+}

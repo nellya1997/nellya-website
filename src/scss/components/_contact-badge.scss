@@ -4,7 +4,7 @@
 
   &__item {
     &:first-child {
-      @include fonty(1.13rem, 600, 1.56rem);
+      @include fonty(1rem, 600, 1.38rem);
     }
   }
 }
