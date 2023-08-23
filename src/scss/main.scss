@@ -3,7 +3,7 @@
 @import "./vars";
 @import "./mixins";
 @import "./base";
-@import "./functions";
+//@import "./functions";
 
 // Blocks
 @import "./components/contact-badge";
@@ -12,4 +12,5 @@
 
 // Sections
 @import "./sections/header";
+@import './sections/first';
 @import "./sections/needIt";

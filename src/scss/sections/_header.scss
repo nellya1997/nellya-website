@@ -71,61 +71,26 @@
 
 @media (min-width: 768px) {
   .header {
-    position: fixed;
     height: auto;
     padding: 0;
 
     .nav {
-      @include centry(91.5%);
+      @include centry(90%);
       @include flexy(row, space-between);
       padding: 0px 0px;
-      background-color: initial;
-      border: none;
-      box-shadow: none;
       transform: translateY(0);
-      transition: transform 0.5s;
+      
+      //what is with logo?
 
+    
       &__list {
-        width: 100%;
+        width: 75%;
         padding: 10px 0;
         @include flexy(row, space-between);
       }
-
-      &__link {
-        //@include fonty(30px, 600, 41px);
-        display: inline-block;
-        font-size: calc(11px + 26 * ((100vw - 768px) / 1920));
-        position: relative;
-      }
-    }
-
-    .contact-badge {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: 930px) {
-  .header {
-    // height: 140px;
-
-    .nav__list {
-      width: 67.3%;
-    }
-
-    .nav__contacts {
-      display: initial;
-
-      li:first-child {
-        span {
-          @include fonty(19px, 600);
-        }
-      }
-
-      li:nth-child(2) {
-        span {
-          @include fonty(16px, 400);
-        }
+      
+      .contacts {
+        display: none;
       }
     }
   }
