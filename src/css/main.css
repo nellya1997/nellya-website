@@ -500,6 +500,38 @@ picture img {
   border-radius: 10px;
   background: linear-gradient(180deg, #EAC4DD 0%, #C093B2 127.17%);
   box-shadow: 0px 2px 10px 0px #DDB7CF;
+  position: relative;
+  overflow: hidden;
+}
+.violetBtn:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 200px;
+  margin-left: 50px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.5) 100%);
+  left: -70px;
+  top: -100px;
+  z-index: 1;
+  transform: rotate(45deg);
+  position: absolute;
+}
+.violetBtn:hover:after {
+  animation: movingFlare 1s ease-in-out 0.05s 1;
+}
+@keyframes movingFlare {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
 }
 
 .header {
@@ -594,13 +626,6 @@ picture img {
     display: none;
   }
 }
-/* z-index
-
-
-
-
-
-*/
 .first {
   text-align: center;
   position: relative;
@@ -608,7 +633,7 @@ picture img {
 .first__digits {
   width: 100%;
   height: 65vh;
-  background: url("../img/first/digits-mobile.png") no-repeat;
+  background: url("../img/first/digits-mobile.png") center/100% 100% no-repeat;
   position: absolute;
   top: -60px;
   z-index: -1;
@@ -619,6 +644,7 @@ picture img {
   background: url("../img/first/mount-background.png") center/cover no-repeat;
   position: absolute;
   top: 0;
+  z-index: -1;
 }
 .first .mountains__left {
   width: 80%;
@@ -633,7 +659,6 @@ picture img {
   background: url("../img/first/mountainRight-mob.png") 50% 100%/100% 65% no-repeat;
   position: absolute;
   right: 0;
-  border: 2px solid yellow;
 }
 .first .container {
   margin: 0 auto;
@@ -664,6 +689,11 @@ picture img {
   max-width: 380px;
   margin: 2em auto 0;
   position: relative;
+  /* z-index:
+   content-before: 0;
+   deco: 1;
+   picture: 1;
+  */
 }
 .first__content::before {
   content: "";
@@ -672,7 +702,7 @@ picture img {
   height: 80%;
   border-radius: 50%;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   background: radial-gradient(at 50% 50%, rgba(210, 168, 196, 0.32) 30%, rgba(255, 255, 255, 0.25) 95%);
 }
 .first__content-deco {
@@ -680,6 +710,7 @@ picture img {
   line-height: calc(15px + 5 * (100vw - 375px) / 1440);
   color: #353232;
   position: absolute;
+  z-index: 1;
 }
 .first__content-deco::before, .first__content-deco::after {
   content: "";
@@ -715,6 +746,8 @@ picture img {
 }
 .first__content-picture {
   height: 55vh;
+  position: relative;
+  z-index: 1;
 }
 .first .first__badge {
   display: flex;
@@ -754,6 +787,10 @@ picture img {
   width: 250px;
   height: 65px;
   margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .needit_container {
