@@ -1,0 +1,8 @@
+.violetBtn {
+    @include flexy();
+    
+    border-radius: 10px;
+    background: linear-gradient(180deg, #EAC4DD 0%, #C093B2 127.17%);
+    box-shadow: 0px 2px 10px 0px #DDB7CF;
+
+}
