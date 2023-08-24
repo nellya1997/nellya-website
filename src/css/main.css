@@ -595,7 +595,7 @@ picture img {
   }
 }
 /* z-index
-0 персиковый фон
+
 
 
 
@@ -603,6 +603,37 @@ picture img {
 */
 .first {
   text-align: center;
+  position: relative;
+}
+.first__digits {
+  width: 100%;
+  height: 65vh;
+  background: url("../img/first/digits-mobile.png") no-repeat;
+  position: absolute;
+  top: -60px;
+  z-index: -1;
+}
+.first .mountains {
+  width: 100%;
+  height: 70%;
+  background: url("../img/first/mount-background.png") center/cover no-repeat;
+  position: absolute;
+  top: 0;
+}
+.first .mountains__left {
+  width: 80%;
+  height: 100%;
+  background: url("../img/first/mountainLeft-mob.png") 50% 100%/100% 65% no-repeat;
+  position: absolute;
+  left: 0;
+}
+.first .mountains__right {
+  width: 80%;
+  height: 100%;
+  background: url("../img/first/mountainRight-mob.png") 50% 100%/100% 65% no-repeat;
+  position: absolute;
+  right: 0;
+  border: 2px solid yellow;
 }
 .first .container {
   margin: 0 auto;
@@ -632,6 +663,17 @@ picture img {
   position: relative;
   max-width: 380px;
   margin: 2em auto 0;
+  position: relative;
+}
+.first__content::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background: radial-gradient(at 50% 50%, rgba(210, 168, 196, 0.32) 30%, rgba(255, 255, 255, 0.25) 95%);
 }
 .first__content-deco {
   font-size: calc(14px + 6 * (100vw - 375px) / 1440);
