@@ -1,11 +1,3 @@
-/* z-index
-
-
-
-
-
-*/
-
 $pictureMobileHeight: 55vh;
 
 .first {
@@ -15,7 +7,7 @@ $pictureMobileHeight: 55vh;
     &__digits {
         width: 100%;
         height: 65vh;
-        background: url('../img/first/digits-mobile.png') no-repeat;
+        background: url('../img/first/digits-mobile.png') center / 100% 100% no-repeat;
         position: absolute;
         top: -60px;
         z-index: -1;
@@ -27,6 +19,7 @@ $pictureMobileHeight: 55vh;
         background: url('../img/first/mount-background.png') center/cover no-repeat;
         position: absolute;
         top: 0;
+        z-index: -1;
         
         &__left {
             width: 80%;
@@ -42,7 +35,6 @@ $pictureMobileHeight: 55vh;
             background: url('../img/first/mountainRight-mob.png') 50% 100%/100% 65% no-repeat;
             position: absolute;
             right: 0;
-            border: 2px solid yellow;
         }
     }
     
@@ -85,6 +77,12 @@ $pictureMobileHeight: 55vh;
         margin: 2em auto 0;
         position: relative;
         
+        /* z-index:
+         content-before: 0;
+         deco: 1;
+         picture: 1;
+        */
+        
         &::before {
             content: '';
             
@@ -94,7 +92,7 @@ $pictureMobileHeight: 55vh;
             border-radius: 50%;
             
             position: absolute;
-            z-index: -1;
+            z-index: 0;
             
             background: radial-gradient(at 50% 50%, rgba(210, 168, 196, 0.32) 30%, rgba(255, 255, 255, 0.25) 95%);
         }
@@ -105,6 +103,7 @@ $pictureMobileHeight: 55vh;
             line-height: calc(15px + 5 * ((100vw - 375px) / 1440));
             color: $boldFontColor;
             position: absolute;
+            z-index: 1;
 
             &::before,
             &::after {
@@ -150,6 +149,8 @@ $pictureMobileHeight: 55vh;
         
         &-picture {
             height: $pictureMobileHeight;
+            position: relative;
+            z-index: 1;
         }
         
         
@@ -200,6 +201,8 @@ $pictureMobileHeight: 55vh;
             width: 250px;
             height: 65px;
             margin: 0 auto;
+            @include fonty(20px, 600, 24px);
+            text-decoration: none;
         }
     }
     
