@@ -13,6 +13,7 @@
     text-decoration: none;
     color: $boldFontColor;
   }
+
   &__logo {
     display: none;
   }
@@ -21,7 +22,7 @@
     transform: translateY(-100vh);
     transition: transform 0.5s;
     padding: 0% 10% 35px 10%;
-
+    overflow-y: initial;
     a,
     p {
       color: $fontColor;
@@ -33,7 +34,7 @@
       right: 0px;
       left: 0px;
       z-index: 2;
-      padding-top: 60px;
+      padding-top: 20px;
       transform: translateY(0vh);
       transition: transform 0.4s;
       background: #e7dae8;
@@ -80,20 +81,19 @@
       @include flexy(row, space-between);
       padding: 0px 0px;
       transform: translateY(0);
-      
+
       //what is with logo?
 
-    
       &__list {
         width: 100%;
         padding: 10px 0;
         @include flexy(row, space-between);
       }
-      
+
       .contacts {
         display: none;
       }
-      .contact-badge{
+      .contact-badge {
         display: none;
       }
     }
@@ -105,17 +105,32 @@
     &__logo {
       display: block;
     }
-    
+
     .nav {
       @include centry(70%);
       width: 85%;
-      
+
       &__list {
         width: 80%;
       }
-      
-      .contact-badge{
+
+      .contact-badge {
         @include flexy(column);
+      }
+    }
+  }
+}
+
+//mobile menu - orientation 'landscape'
+@media (max-width: 767px) and (orientation: landscape) {
+  body {
+    overflow-y: scroll !important;
+  }
+
+  .header {
+    .nav {
+      &_active {
+        padding: 0% 5% 25px 5%;
       }
     }
   }
