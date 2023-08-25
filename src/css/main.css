@@ -558,6 +558,7 @@ picture img {
   transform: translateY(-100vh);
   transition: transform 0.5s;
   padding: 0% 10% 35px 10%;
+  overflow-y: initial;
 }
 .header .nav a,
 .header .nav p {
@@ -569,7 +570,7 @@ picture img {
   right: 0px;
   left: 0px;
   z-index: 2;
-  padding-top: 60px;
+  padding-top: 20px;
   transform: translateY(0vh);
   transition: transform 0.4s;
   background: #e7dae8;
@@ -647,6 +648,14 @@ picture img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  body {
+    overflow-y: scroll !important;
+  }
+  .header .nav_active {
+    padding: 0% 5% 25px 5%;
   }
 }
 .first {
