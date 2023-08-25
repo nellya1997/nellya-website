@@ -84,13 +84,37 @@
 
     
       &__list {
-        width: 75%;
+        width: 100%;
         padding: 10px 0;
         @include flexy(row, space-between);
       }
       
       .contacts {
         display: none;
+      }
+      .contact-badge{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .header {
+    &__logo {
+      display: block;
+    }
+    
+    .nav {
+      @include centry(70%);
+      width: 85%;
+      
+      &__list {
+        width: 80%;
+      }
+      
+      .contact-badge{
+        @include flexy(column);
       }
     }
   }
