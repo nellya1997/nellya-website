@@ -615,7 +615,7 @@ picture img {
     transform: translateY(0);
   }
   .header .nav__list {
-    width: 75%;
+    width: 100%;
     padding: 10px 0;
     display: flex;
     flex-direction: row;
@@ -624,6 +624,28 @@ picture img {
   }
   .header .nav .contacts {
     display: none;
+  }
+  .header .nav .contact-badge {
+    display: none;
+  }
+}
+@media (min-width: 1023px) {
+  .header__logo {
+    display: block;
+  }
+  .header .nav {
+    margin: 0 auto;
+    width: 70%;
+    width: 85%;
+  }
+  .header .nav__list {
+    width: 80%;
+  }
+  .header .nav .contact-badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .first {
