@@ -83,20 +83,14 @@ $pictureMobileHeight: 55vh;
          picture: 1;
         */
         
-        &::before {
-            content: '';
-            
-            display: block;
+        &-background {
             width: 100%;
-            height: 80%;
-            border-radius: 50%;
+            height: 45vh;
+            background: radial-gradient(at 50% 50%, rgba(210, 168, 196, 0.4) 50%, rgba(255, 255, 255, 0) 70%);
             
             position: absolute;
-            z-index: 0;
-            
-            background: radial-gradient(at 50% 50%, rgba(210, 168, 196, 0.32) 30%, rgba(255, 255, 255, 0.25) 95%);
+            top: 0;
         }
-        
         
         &-deco {
             font-size: calc(14px + 6 * ((100vw - 375px) / 1440));
@@ -152,8 +146,6 @@ $pictureMobileHeight: 55vh;
             position: relative;
             z-index: 1;
         }
-        
-        
     }
     
     .first__badge {
@@ -207,3 +199,4 @@ $pictureMobileHeight: 55vh;
     }
     
 }
+
