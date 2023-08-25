@@ -4,10 +4,11 @@ $pictureMobileHeight: 55vh;
     text-align: center;
     position: relative;
     
+    
     &__digits {
         width: 100%;
         height: 65vh;
-        background: url('../img/first/digits-mobile.png') center / 100% 100% no-repeat;
+        background: url('../img/first/digitsMobile.png') center / 100% 100% no-repeat;
         position: absolute;
         top: -60px;
         z-index: -1;
@@ -16,7 +17,7 @@ $pictureMobileHeight: 55vh;
     .mountains {
         width: 100%;
         height: 70%;
-        background: url('../img/first/mount-background.png') center/cover no-repeat;
+        background: url('../img/first/mountainBackgroundMob.png') center/cover no-repeat;
         position: absolute;
         top: 0;
         z-index: -1;
@@ -42,19 +43,21 @@ $pictureMobileHeight: 55vh;
         @include centry(80%);
     }
     
-    
     &__title {
         &-subtext {
             @include fonty(0.88rem, 500, 1.25rem);
         }
         
         .h1 {
-            font-family: $fontAccent;
-            //@include fonty(2.5rem, 600, 3.375rem);
-            font-size: rem(40px);
+            //делаю этот элемент на px, т.к. его не р-р не надо изменять пользователям + если установить line-height по значениям из макета - то first__title растянется до пупа как сиськи у бабки
             
+            font-family: $fontAccent;
+            font-size: calc(40px + 40 * ((100vw - 375px) / 1440));
+            line-height: 0px;
+            font-weight: 600;
             color: $titleColor;
             text-transform: uppercase;
+            padding: 10px 0;
         }
         
         .foxyBadge{
@@ -197,6 +200,77 @@ $pictureMobileHeight: 55vh;
             text-decoration: none;
         }
     }
-    
 }
 
+@media(min-width: 768px) {
+    .first {
+        &__digits {
+            height: 119%; // ?
+            background: url('../img/first/digitsDesc.png') center / 100% 100% no-repeat;
+            top: -95px;
+        }
+        
+        .mountains {
+            height: 100%;
+            background: url('../img/first/mountainBackgroundDesc.png') center/100% 100% no-repeat;
+            
+            &__left {
+                background: url('../img/first/mountainLeftDesc.png') 50% 100%/100% 65% no-repeat;
+            }
+            
+            &__right {
+                background: url('../img/first/mountainRightDesc.png') 50% 100%/100% 65% no-repeat;
+            }
+        }
+        
+        .container {
+            width: unset;
+        }
+        
+        &__title {
+            position: absolute;
+            width: calc(735px + 231 * ((100vw - 768px) / 1440));
+            top: 32%;
+            left: 2em;
+            right: 0;
+            margin: auto;
+            z-index: 2;
+            
+            &-subtext {
+                text-align: right;
+            }
+            
+            .h1 {
+                line-height: 0px;
+                @include flexy(row, space-between);
+            }
+            
+            .foxyBadge{
+                position: absolute;
+                bottom: 5px;
+                right: 3em;
+                left: 0;
+                margin: auto;
+            }
+
+        }
+        
+        .first__badge {
+            flex-direction: row-reverse;
+            @include centry(78%);
+            
+            &-text {
+                width: 49%;
+            }
+        }
+        
+    }
+}
+
+@media(min-width: 1024px) {
+    .first {
+        .first__badge {
+            width: 48.1%;
+    }
+}
+}
