@@ -123,14 +123,11 @@
 
 //mobile menu - orientation 'landscape'
 @media (max-width: 767px) and (orientation: landscape) {
-  body {
-    overflow-y: scroll !important;
-  }
-
   .header {
     .nav {
       &_active {
-        padding: 0% 5% 25px 5%;
+        height: 100vh;
+        overflow-y: scroll;
       }
     }
   }
