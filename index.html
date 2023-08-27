@@ -132,7 +132,6 @@
                 srcset="./src/img/first/photoFirst-mobile.png"
                 alt="Нелля Сюняева"
               />
-
               <img
                 src="./src/img/first/photoFirst-mobile.png"
                 alt="Нелля Сюняева"
@@ -167,12 +166,99 @@
       <section id="services" class="services">
         <div class="services_container">
           <h1 class="services__title">Услуги</h1>
-          <img src="./src/img/services/Hand1.png" alt="hand1" class="services_hand1">
-          <img src="./src/img/services/Hand2.png" alt="hand2" class="services_hand2">
-          <div class="services_packs">
+          <div class="services_hand1">
+          <picture class="">
+            <source
+              type="image/webp"
+              media="(min-width: 414px)"
+              srcset="./src/img/services/Hand1.webp"
+              alt="hand1"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 414px)"
+              srcset="./src/img/services/Hand1.png"
+              alt="hand1"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 174px)"
+              srcset="./src/img/services/Hand1.webp"
+              alt="hand1"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 174px)"
+              srcset="./src/img/services/Hand1.png"
+              alt="hand1"
+            />
+            <img src="./src/img/services/Hand1.png" 
+            alt="hand1">
+          </picture>
+        </div>
+        <div class="services_hand2">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 414px)"
+              srcset="./src/img/services/Hand2.webp"
+              alt="hand2"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 414px)"
+              srcset="./src/img/services/Hand2.png"
+              alt="hand2"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 174px)"
+              srcset="./src/img/services/Hand2.webp"
+              alt="hand2"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 174px)"
+              srcset="./src/img/services/Hand2.png"
+              alt="hand2"
+            />
+            <img src="./src/img/services/Hand2.png"
+            alt="Hand2"/>
+            </picture>
+            </div>
+            <div class="services_packs">
             <div class="services_pack">
               <span>
-              <img src="./src/img/services/Flower.png" alt="Flower" class="services_packet_img">
+                <div class="services_packet_img">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 368px)"
+                      srcset="./src/img/services/Flower.webp"
+                      alt="Flower"
+                    />
+                    <source
+                      type="image/png"
+                      media="(min-width: 368px)"
+                      srcset="./src/img/services/Flower.png"
+                      alt="Flower"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 254px)"
+                      srcset="./src/img/services/Flower.webp"
+                      alt="Flower"
+                    />
+                    <source
+                      type="image/png"
+                      media="(min-width: 254px)"
+                      srcset="./src/img/services/Flower.png"
+                      alt="Flower"
+                    />
+                    <img src="./src/img/services/Flower.png"
+                    alt="Flower"/>
+                    </picture>
+                    </div>
               </span>
               <div class="services_pack_main">
               <div class="services_packet_about">
@@ -185,7 +271,8 @@
                 <p><span>Быстрый сбор информации</span> на ваше праздник, быстрый доступ к списку гостей</p>
                 <p><span>Сохраните свое время, потратите меньше ресурсов и удобность отслеживание гостей</span></p>
               </div>
-              <h3>Один дизайн - мобильная версия</h3>
+              <h3 class="services_addition">Один дизайн - мобильная версия</h3>
+              <h3 class="services_data">Время работы до 3 дней</h3>
               <h3 class="price">10.000₽</h3>
               <div class="services_buttons">
                 <button>Заказать сайт</button>
@@ -212,7 +299,8 @@
                 <p>Веб-разработка - <span>для мобильной версии с адаптацией под все устройства</span></p>
                 <p>Регистрация домена, привязка к хостингу</p>
               </div>
-              <h3>Один дизайн на все устройства</h3>
+              <h3 class="services_addition">Один дизайн на все устройства</h3>
+              <h3 class="services_data">Время работы от 7 дней</h3>
               <h3 class="price">30.000₽</h3>
               <div class="services_buttons">
                 <button>Заказать сайт</button>
@@ -239,7 +327,8 @@
                 <p>Веб-разработка - <span>для мобильной версии с адаптацией под все устройства</span></p>
                 <p>Регистрация домена, привязка к хостингу</p>
               </div>
-              <h3>Один дизайн на все устройства</h3>
+              <h3 class="services_addition">Один дизайн на все устройства</h3>
+              <h3 class="services_data">Время работы от 10 дней</h3>
               <h3 class="price">45.000₽</h3>
               <div class="services_buttons">
                 <button>Заказать сайт</button>
@@ -259,11 +348,59 @@
       <section id="additional" class="additional">
         <div class="additional_container">
           <p>Облегчи свою работу</p>
-          <h1 class="additional__title">ДОПОЛНИТЕЛЬНЫМИ <br/> УСЛУГАМИ <button>Для сайта</button></h1>
+          <h1 class="additional__title">ДОПОЛНИТЕЛЬНЫМИ <br/> УСЛУГАМИ <button>Для сайта
+            <div class="additional_click">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 39px)"
+                  srcset="./src/img/additional/click.webp"
+                  alt="click"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 39px)"
+                  srcset="./src/img/additional/click.png"
+                  alt="click"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 31px)"
+                  srcset="./src/img/additional/click.webp"
+                  alt="click"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 31px)"
+                  srcset="./src/img/additional/click.png"
+                  alt="click"
+                />
+                <img src="./src/img/additional/click.png"
+                alt="click" />
+                </picture>
+                </div>
+                </button></h1>
           <div class="additional_contents">
             <div class="additional_content1">
-              <img src="./src/img/additional/robot.png" alt="robot">
-              <button>Улучши свой бизнес</button>
+              <div class="additional_robot">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 266px)"
+                    srcset="./src/img/additional/robot.webp"
+                    alt="Flower"
+                  />
+                  <source
+                    type="image/png"
+                    media="(min-width: 266px)"
+                    srcset="./src/img/additional/robot.png"
+                    alt="Robot"
+                  />
+                  <img src="./src/img/additional/robot.png"
+                  alt="Robot"/>
+                  </picture>
+                  </div>
+                  <button>Улучши свой бизнес</button>
             </div>
             <div class="additional_content2">
               <div class="additional_offer">

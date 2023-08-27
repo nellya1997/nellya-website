@@ -7,18 +7,16 @@
       display: flex;
       flex-direction: column;
       gap: 60px;
-  
       .services__title {
         @include title;
       }
       .services_hand1 {
         position: absolute;
-        position: absolute;
         right: 0;
         top: 60px;
         height: 340px;
         @media(max-width: 480px) {
-          top: 660px;
+          top: 740px;
           z-index: 3;
         }
       }
@@ -29,7 +27,7 @@
         height: 187px;
         @media(max-width: 480px) {
           bottom: unset;
-          top: 1150px;
+          top: 1310px;
           z-index: 3;
         }
       }
@@ -45,7 +43,7 @@
         .services_pack {
           display: flex;
           max-width: 353px;
-          height:814px; 
+          height:914px; 
           padding: 0px 20px 50px 20px;
           flex-direction: column;
           align-items: center;
@@ -55,7 +53,7 @@
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           @media(max-width: 480px) {
             max-width: 300px;
-            height: 914px;
+            height: 1014px;
           }
           >span {
             height: 47px;
@@ -105,6 +103,13 @@
               font-weight: 600;
             }
           }
+          .services_addition {
+            text-align: center;
+            font-size: calc(20px + 7 * ((100vw - 375px) / 1440));
+          }
+          .services_data {
+            @include fonty;
+          }
           .price {
             font-size: 40px;
             font-weight: 600;
@@ -138,4 +143,3 @@
       }
     }
   }
-  

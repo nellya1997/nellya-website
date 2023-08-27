@@ -1133,7 +1133,6 @@ picture img {
 
 .services .services_container .services_hand1 {
   position: absolute;
-  position: absolute;
   right: 0;
   top: 60px;
   height: 340px;
@@ -1141,7 +1140,7 @@ picture img {
 
 @media (max-width: 480px) {
   .services .services_container .services_hand1 {
-    top: 660px;
+    top: 740px;
     z-index: 3;
   }
 }
@@ -1156,7 +1155,7 @@ picture img {
 @media (max-width: 480px) {
   .services .services_container .services_hand2 {
     bottom: unset;
-    top: 1150px;
+    top: 1310px;
     z-index: 3;
   }
 }
@@ -1187,7 +1186,7 @@ picture img {
   display: -ms-flexbox;
   display: flex;
   max-width: 353px;
-  height: 814px;
+  height: 914px;
   padding: 0px 20px 50px 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1207,7 +1206,7 @@ picture img {
 @media (max-width: 480px) {
   .services .services_container .services_packs .services_pack {
     max-width: 300px;
-    height: 914px;
+    height: 1014px;
   }
 }
 
@@ -1281,6 +1280,17 @@ picture img {
 .services .services_container .services_packs .services_pack .services_pack_main .services_packet_benefits span {
   color: var(--unnamed, #353232);
   font-weight: 600;
+}
+
+.services .services_container .services_packs .services_pack .services_pack_main .services_addition {
+  text-align: center;
+  font-size: calc(20px + 7 * ((100vw - 375px) / 1440));
+}
+
+.services .services_container .services_packs .services_pack .services_pack_main .services_data {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .services .services_container .services_packs .services_pack .services_pack_main .price {
@@ -1404,6 +1414,12 @@ picture img {
   }
 }
 
+.additional .additional_container .additional__title > button .additional_click {
+  height: 39px;
+  position: absolute;
+  right: 0;
+}
+
 .additional .additional_container .additional_contents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1425,6 +1441,10 @@ picture img {
   }
 }
 
+.additional .additional_container .additional_contents .additional_content1 .additional_robot {
+  height: 367px;
+}
+
 .additional .additional_container .additional_contents .additional_content1 > button {
   border-radius: 10px;
   right: 109px;
@@ -1432,8 +1452,6 @@ picture img {
   border: 1px solid rgba(255, 252, 252, 0.5);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(12.5px);
-          backdrop-filter: blur(12.5px);
   width: 230px;
   height: 54px;
   position: relative;
@@ -1467,7 +1485,7 @@ picture img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 114px;
-  font-size: 14px;
+  font-size: calc(14px + 4 * ((100vw - 375px) / 1440));
 }
 
 @media (max-width: 480px) {

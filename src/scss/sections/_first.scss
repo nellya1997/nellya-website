@@ -52,8 +52,6 @@ $pictureMobileHeight: 55vh;
     }
 
     .h1 {
-      //делаю этот элемент на px, т.к. его не р-р не надо изменять пользователям + если установить line-height по значениям из макета - то first__title растянется до пупа как сиськи у бабки
-
       font-family: $fontAccent;
       font-size: calc(40px + 40 * ((100vw - 375px) / 1440));
       line-height: 0px;
