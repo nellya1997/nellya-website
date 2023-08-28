@@ -900,7 +900,7 @@ picture img {
 .needit__container {
   display: block;
   margin: 0 auto;
-  width: 91.5%;
+  width: 80%;
 }
 .needit__title, .needit__subtitle {
   width: 100%;
@@ -908,9 +908,17 @@ picture img {
   margin: 0;
 }
 .needit__title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 35px;
   line-height: 42.8px;
+}
+.needit__subtitle {
+  font-weight: 700;
+  font-family: "Playfair";
+  line-height: 53.3px;
+  color: #ba94bd;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 .needit__layout {
   display: grid;
@@ -936,7 +944,7 @@ picture img {
   grid-area: col2;
 }
 .needit__layout__col2-content {
-  height: auto;
+  height: 609px;
   width: 302px;
   padding-top: 30px;
 }

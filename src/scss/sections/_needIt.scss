@@ -3,7 +3,7 @@
 
   &__container {
     display: block;
-    @include centry(91.5%);
+    @include centry(80%);
     // border: $myBorder;
   }
 
@@ -14,9 +14,18 @@
     margin: 0;
   }
   &__title {
-    font-weight: 700;
+    font-weight: 600;
+
     font-size: 35px;
     line-height: 42.8px;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-family: $fontAccent;
+    line-height: 53.3px;
+    color: #ba94bd;
+    text-transform: uppercase;
+    font-size: 40px;
   }
   &__layout {
     display: grid;
@@ -46,7 +55,7 @@
       grid-area: col2;
 
       &-content {
-        height: auto;
+        height: 609px;
         width: 302px;
         padding-top: 30px;
       }
