@@ -13,6 +13,11 @@
     text-align: center;
     margin: 0;
   }
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42.8px;
+  }
   &__layout {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -34,16 +39,16 @@
       grid-area: col1;
     }
     &__col2 {
-      height: auto;
       background-repeat: no-repeat;
       background-position: center;
-
       background-image: url("../img/needit/tel.png");
       // border: $myBorder;
       grid-area: col2;
 
       &-content {
-        width: 100%;
+        height: auto;
+        width: 302px;
+        padding-top: 30px;
       }
 
       picture img {
