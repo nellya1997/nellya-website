@@ -1,10 +1,10 @@
 .needit {
-  padding-top: 70px;
+  position: relative;
 
   &__container {
     display: block;
     @include centry(91.5%);
-    border: $myBorder;
+    // border: $myBorder;
   }
 
   &__title,
@@ -17,6 +17,8 @@
     display: grid;
     grid-template-columns: auto 302px auto;
     grid-template-areas: "col1 col2 col3";
+    justify-items: center;
+    justify-content: baseline;
 
     &__col1,
     &__col3 {
@@ -27,11 +29,13 @@
 
     &__col1 {
       height: auto;
-      border: $myBorder;
+      width: fit-content;
+      // border: $myBorder;
       grid-area: col1;
     }
     &__col2 {
       height: 609px;
+      width: fit-content;
       background-repeat: no-repeat;
       background-position: center;
       background-size: 272px 579px;
@@ -41,13 +45,47 @@
     }
     &__col3 {
       height: auto;
+      width: fit-content;
       // border: $myBorder;
       grid-area: col3;
     }
 
     &__col__card {
       width: auto;
-      height: max-content;
+      height: fit-content;
+    }
+  }
+  &__card {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto auto auto;
+    width: fit-content;
+    &-image {
+      picture img {
+        width: 121px;
+      }
+    }
+
+    &__content {
+      padding-top: 20px;
+      border-style: solid;
+      border-radius: 10px;
+      border-width: 1px;
+      border-color: #353232;
+      &-title {
+        color: #353232;
+        font-weight: 700;
+        text-align: center;
+      }
+      &-text {
+        width: 391px;
+        text-align: justify;
+        padding-left: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+      }
     }
   }
 }
