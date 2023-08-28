@@ -15,7 +15,7 @@
   }
   &__layout {
     display: grid;
-    grid-template-columns: auto 302px auto;
+    grid-template-columns: auto auto auto;
     grid-template-areas: "col1 col2 col3";
     justify-items: center;
     justify-content: baseline;
@@ -34,14 +34,21 @@
       grid-area: col1;
     }
     &__col2 {
-      height: 609px;
-      width: fit-content;
+      height: auto;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 272px 579px;
+
       background-image: url("../img/needit/tel.png");
       // border: $myBorder;
       grid-area: col2;
+
+      &-content {
+        width: 100%;
+      }
+
+      picture img {
+        width: 191px;
+      }
     }
     &__col3 {
       height: auto;
@@ -61,14 +68,17 @@
     justify-items: center;
     grid-template-rows: auto auto auto;
     width: fit-content;
+
     &-image {
+      position: relative;
+      top: 30px;
       picture img {
         width: 121px;
       }
     }
 
     &__content {
-      padding-top: 20px;
+      padding-top: 30px;
       border-style: solid;
       border-radius: 10px;
       border-width: 1px;
@@ -80,7 +90,8 @@
       }
       &-text {
         width: 391px;
-        text-align: justify;
+        text-align: left;
+        line-height: 25.2px;
         padding-left: 50px;
         padding-top: 30px;
         padding-bottom: 30px;
