@@ -84,3 +84,22 @@ const swiperPortfolio = new Swiper('.portfolio-bottom__swiper', {
   },
 });
 */
+
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 2, // Display two slides at a time
+  spaceBetween: 30, // Gap between slides
+  // Optional: Add navigation buttons
+  navigation: {
+    nextEl: '.nextButton',
+    prevEl: '.prevButton',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2, // Display one slide at 768px and below
+    },
+    0: {
+      slidesPerView: 1, // Display one slide at 768px and below
+    }
+  }
+});
