@@ -895,23 +895,37 @@ picture img {
   }
 }
 .needit {
-  padding-top: 70px;
+  position: relative;
 }
 .needit__container {
   display: block;
   margin: 0 auto;
-  width: 91.5%;
-  border: 2px solid red;
+  width: 80%;
 }
 .needit__title, .needit__subtitle {
   width: 100%;
   text-align: center;
   margin: 0;
 }
+.needit__title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42.8px;
+}
+.needit__subtitle {
+  font-weight: 700;
+  font-family: "Playfair";
+  line-height: 53.3px;
+  color: #ba94bd;
+  text-transform: uppercase;
+  font-size: 40px;
+}
 .needit__layout {
   display: grid;
-  grid-template-columns: auto 302px auto;
+  grid-template-columns: auto auto auto;
   grid-template-areas: "col1 col2 col3";
+  justify-items: center;
+  justify-content: baseline;
 }
 .needit__layout__col1, .needit__layout__col3 {
   display: grid;
@@ -920,24 +934,66 @@ picture img {
 }
 .needit__layout__col1 {
   height: auto;
-  border: 2px solid red;
+  width: fit-content;
   grid-area: col1;
 }
 .needit__layout__col2 {
-  height: 609px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 272px 579px;
   background-image: url("../img/needit/tel.png");
   grid-area: col2;
 }
+.needit__layout__col2-content {
+  height: 609px;
+  width: 302px;
+  padding-top: 30px;
+}
+.needit__layout__col2 picture img {
+  width: 191px;
+}
 .needit__layout__col3 {
   height: auto;
+  width: fit-content;
   grid-area: col3;
 }
 .needit__layout__col__card {
   width: auto;
-  height: max-content;
+  height: fit-content;
+}
+.needit__card {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: auto auto auto;
+  width: fit-content;
+}
+.needit__card-image {
+  position: relative;
+  top: 30px;
+}
+.needit__card-image picture img {
+  width: 121px;
+}
+.needit__card__content {
+  padding-top: 30px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #353232;
+}
+.needit__card__content-title {
+  color: #353232;
+  font-weight: 700;
+  text-align: center;
+}
+.needit__card__content-text {
+  width: 391px;
+  text-align: left;
+  line-height: 25.2px;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
 }
 
 @media (max-width: 890px) {
