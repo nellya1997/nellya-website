@@ -36,12 +36,12 @@
       background-position: center;
       background-size: 272px 579px;
       background-image: url("../img/needit/tel.png");
-      border: $myBorder;
+      // border: $myBorder;
       grid-area: col2;
     }
     &__col3 {
       height: auto;
-      border: $myBorder;
+      // border: $myBorder;
       grid-area: col3;
     }
 
