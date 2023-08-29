@@ -1,0 +1,81 @@
+.footer {
+  @include fonty(0.88rem, 400, 1rem);
+
+  height: 643px;
+  background: url('../img/footer/background.png') center/cover no-repeat;
+  background-color: #e7dae8;
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    font-family: $fontMain;
+    text-decoration: none;
+    color: $boldFontColor;
+  }
+
+  .container {
+    @include centry(80.2%);
+
+    @include flexy(column, space-between, normal);
+    gap: 2em;
+    padding: 2em 0;
+  }
+
+  &__h3 {
+    padding-bottom: 0.5em;
+  }
+
+  &__item {
+    @include flexy(row, space-between, flex-start);
+    gap: 1.5em;
+
+    &-info {
+      min-width: 140px;
+
+      p {
+        padding: 5px 0;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    &-rules {
+      a {
+        display: block;
+        padding: 2px 0;
+      }
+    }
+  }
+
+  &__nav {
+    @include flexy(row, space-between);
+
+    li {
+      padding: 5px 0 0 5px;
+    }
+  }
+
+  &__contacts {
+    .contact-badge {
+      padding-top: 10px;
+      align-items: normal;
+    }
+
+    .socials {
+      justify-content: flex-start;
+      margin: unset;
+    }
+  }
+
+  &__down {
+    @include flexy(row, space-between);
+
+    span {
+      @include fonty(1rem, 600, 1.25rem);
+    }
+  }
+}
