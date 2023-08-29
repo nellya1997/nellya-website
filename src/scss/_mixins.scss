@@ -23,3 +23,16 @@
     grid-template-columns: repeat($columns, $value);
     column-gap: $gap;
 }
+
+@mixin title {
+    font-family: "Playfair";
+    font-size: calc(40px + 40 * (100vw - 375px) / 1440);
+    font-weight: 600;
+    color: #ba94bd;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
+    @media(max-width: 480px) {
+        font-size: 25px;
+    }
+}
