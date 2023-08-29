@@ -1,0 +1,75 @@
+.contacts {
+    position: relative;
+    padding: 150px 0px;
+    overflow: hidden;
+    .contacts_container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      @media(max-width: 768px) {
+        gap: 40px;
+      }
+      .contacts__title {
+        @include title;
+      }
+      .contacts_buttons {
+        display: flex;
+        gap: 147px;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media(max-width: 768px) {
+          gap: 25px;
+        }
+        >button {
+            width: 289px;
+            height: 42px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #EAC4DD 0%, #C093B2 100%);
+            box-shadow: 0px 2px 10px 0px #DDB7CF;
+            border: none;
+        }
+      }
+      .swiper-container {
+        width: 1147px;
+        overflow: hidden;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 71px;
+        @media(max-width: 1120px) {
+          width: 800px;
+        }
+        @media(max-width: 768px) {
+          width: 400px;
+          gap: 35px;
+        }
+        @media(max-width: 480px) {
+          width: 300px;
+        }
+        .swiper-wrapper {
+        display: flex;
+        position: relative;
+        .swiper-slide {
+            width: 558px!important;
+            height: 345px;
+            @media(max-width: 1120px) {
+              width: 400px!important;
+            }
+            @media(max-width: 480px) {
+              width: 300px!important;
+            }
+        }
+      }
+      .contact_content_buttons {
+        display: flex;
+        gap: 33px;
+        align-items: center;
+        >picture {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+    }
+}
