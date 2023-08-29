@@ -79,3 +79,58 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .footer {
+    height: auto;
+    .container {
+      width: 90%;
+      flex-direction: row;
+      padding: 5em 0;
+    }
+
+    &__item {
+      display: block;
+
+      &-rules {
+        padding-top: 2em;
+        a {
+          padding: 5px 0;
+        }
+      }
+    }
+
+    &__nav {
+      display: block;
+
+      li {
+        padding: 5px 0;
+      }
+    }
+
+    &__down {
+      span {
+        display: none;
+      }
+    }
+
+    &__contacts {
+      li {
+        padding-top: 10px;
+      }
+
+      .contact-badge {
+        margin-bottom: -2em;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    .container {
+      width: 80%;
+      justify-content: space-around;
+    }
+  }
+}

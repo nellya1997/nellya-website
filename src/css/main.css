@@ -1470,3 +1470,44 @@ picture img {
   font-weight: 600;
   line-height: 1.25rem;
 }
+
+@media (min-width: 768px) {
+  .footer {
+    height: auto;
+  }
+  .footer .container {
+    width: 90%;
+    flex-direction: row;
+    padding: 5em 0;
+  }
+  .footer__item {
+    display: block;
+  }
+  .footer__item-rules {
+    padding-top: 2em;
+  }
+  .footer__item-rules a {
+    padding: 5px 0;
+  }
+  .footer__nav {
+    display: block;
+  }
+  .footer__nav li {
+    padding: 5px 0;
+  }
+  .footer__down span {
+    display: none;
+  }
+  .footer__contacts li {
+    padding-top: 10px;
+  }
+  .footer__contacts .contact-badge {
+    margin-bottom: -2em;
+  }
+}
+@media (min-width: 1024px) {
+  .footer .container {
+    width: 80%;
+    justify-content: space-around;
+  }
+}
