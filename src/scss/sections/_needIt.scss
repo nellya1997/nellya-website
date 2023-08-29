@@ -102,7 +102,14 @@
       border-radius: 10px;
       border-width: 1px;
       border-color: #353232;
+      details > summary {
+        list-style: none;
+      }
+      summary::before {
+        content: "+";
+      }
       &-title {
+        width: 391px;
         color: #353232;
         font-size: 22px;
         padding-left: 30px;
@@ -141,6 +148,7 @@
           font-size: 14px;
         }
         &-title {
+          width: 310px;
         }
       }
     }
@@ -168,6 +176,7 @@
           width: 310px;
         }
         &-title {
+          width: 310px;
         }
       }
     }

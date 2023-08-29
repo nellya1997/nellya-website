@@ -986,7 +986,14 @@ picture img {
   border-width: 1px;
   border-color: #353232;
 }
+.needit__card__content details > summary {
+  list-style: none;
+}
+.needit__card__content summary::before {
+  content: "+";
+}
 .needit__card__content-title {
+  width: 391px;
   color: #353232;
   font-size: 22px;
   padding-left: 30px;
@@ -1015,6 +1022,9 @@ picture img {
     width: 310px;
     font-size: 14px;
   }
+  .needit__card__content-title {
+    width: 310px;
+  }
 }
 @media (max-width: 420px) {
   .needit__layout {
@@ -1028,6 +1038,9 @@ picture img {
     grid-template-areas: "col1" "col3" "col2";
   }
   .needit__card__content-text {
+    width: 310px;
+  }
+  .needit__card__content-title {
     width: 310px;
   }
 }/*# sourceMappingURL=main.css.map */
