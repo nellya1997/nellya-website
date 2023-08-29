@@ -1,0 +1,12 @@
+//хз почему не видит здесь mixin:
+@import '../mixins';
+
+.address-badge {
+  @include fonty(0.88rem, 400, 1.25rem);
+
+  span {
+    &:first-child {
+      font-weight: 600;
+    }
+  }
+}

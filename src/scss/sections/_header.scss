@@ -49,15 +49,8 @@
         padding-bottom: 15px;
       }
 
-      .contacts {
+      .address-badge {
         padding: 15px 0;
-        @include fonty(0.88rem, 400, 1.25rem);
-      }
-
-      span {
-        &:first-child {
-          font-weight: 600;
-        }
       }
     }
 
