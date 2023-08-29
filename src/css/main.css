@@ -47,6 +47,8 @@ h1 {
 hr {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
