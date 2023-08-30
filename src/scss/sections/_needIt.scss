@@ -32,7 +32,9 @@
     grid-template-columns: auto auto auto;
     grid-template-areas: "col1 col2 col3";
     justify-items: center;
-    justify-content: baseline;
+    align-items: end;
+    justify-content: space-around;
+    gap: 15px;
 
     &__col1,
     &__col3 {
@@ -42,8 +44,9 @@
     }
 
     &__col1 {
-      height: auto;
+      height: min-content;
       width: fit-content;
+      justify-self: end;
       // border: $myBorder;
       grid-area: col1;
     }
@@ -67,6 +70,7 @@
     &__col3 {
       height: auto;
       width: fit-content;
+      justify-self: start;
       // border: $myBorder;
       grid-area: col3;
     }
@@ -80,42 +84,53 @@
     display: grid;
     align-items: center;
     justify-items: center;
+    justify-content: start;
     grid-template-rows: auto auto auto;
     width: fit-content;
 
     &-image {
       position: relative;
-      top: 30px;
+      top: 40px;
       picture img {
         width: 121px;
       }
     }
 
     &__content {
-      padding-top: 30px;
+      padding-top: 50px;
       border-style: solid;
       border-radius: 10px;
       border-width: 1px;
       border-color: #353232;
+      details > summary {
+        list-style: none;
+      }
+      summary::before {
+        content: "+";
+      }
       &-title {
+        width: 391px;
         color: #353232;
+        font-size: 22px;
+        padding-left: 30px;
+        padding-right: 10px;
         font-weight: 700;
-        text-align: center;
+        text-align: start;
       }
       &-text {
         width: 391px;
         text-align: left;
         line-height: 25.2px;
-        padding-left: 50px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-right: 20px;
       }
     }
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 680px) {
   .needit {
     &__layout {
       grid-template-columns: auto;
@@ -125,6 +140,45 @@
         "col1"
         "col3"
         "col2";
+    }
+    &__card {
+      &__content {
+        &-text {
+          width: 310px;
+          font-size: 14px;
+        }
+        &-title {
+          width: 310px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .needit {
+    &__layout {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
+      grid-auto-flow: column;
+      justify-items: center;
+      justify-content: center;
+      gap: 0px;
+      grid-template-areas:
+        "col1"
+        "col3"
+        "col2";
+    }
+
+    &__card {
+      &__content {
+        &-text {
+          width: 310px;
+        }
+        &-title {
+          width: 310px;
+        }
+      }
     }
   }
 }
