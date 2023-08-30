@@ -42,26 +42,6 @@
   window.addEventListener('resize', checkCurrentWidth);
 })();
 
-// first section;
-/*
-//надо еще потестить: кажется все можно сделать без append.child и потом удоилть эту хуйню:
-
-(function () {
-  const firstTitle = document.querySelector('.first__title');
-  const first = document.querySelector('.first');
-
-  console.log('works');
-
-  (function () {
-    if (window.screen.width > 767) {
-      first.prepend(firstTitle);
-
-      console.log('screen width has been changed');
-    }
-  })();
-})();
-*/
-
 /*               SLIDER                 */
 /* this is my code I was using in Tattoo web-site, it shall be refactored;
 const swiperPortfolio = new Swiper('.portfolio-bottom__swiper', {
@@ -84,3 +64,21 @@ const swiperPortfolio = new Swiper('.portfolio-bottom__swiper', {
   },
 });
 */
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 2, // Display two slides at a time
+  spaceBetween: 30, // Gap between slides
+  // Optional: Add navigation buttons
+  navigation: {
+    nextEl: '.nextButton',
+    prevEl: '.prevButton',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2, // Display one slide at 768px and below
+    },
+    0: {
+      slidesPerView: 1, // Display one slide at 768px and below
+    },
+  },
+});
