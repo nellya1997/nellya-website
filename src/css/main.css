@@ -924,7 +924,7 @@ picture img {
   grid-template-areas: "col1 col2 col3";
   justify-items: center;
   align-items: end;
-  justify-content: space-around;
+  justify-content: center;
   gap: 15px;
 }
 .needit__layout__col1, .needit__layout__col3 {
