@@ -82,8 +82,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -399,8 +398,7 @@ picture {
 picture img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .link {
@@ -927,6 +925,7 @@ picture img {
   justify-items: center;
   align-items: end;
   justify-content: space-around;
+  justify-content: space-around;
   gap: 15px;
 }
 .needit__layout__col1, .needit__layout__col3 {
@@ -935,12 +934,7 @@ picture img {
   grid-template-rows: repeat(2, 1fr);
 }
 .needit__layout__col1 {
-<<<<<<< HEAD
   height: min-content;
-=======
-  height: auto;
-  width: -moz-fit-content;
->>>>>>> 5ebdd6879ac01f834086397e92095d9e04be41fb
   width: fit-content;
   justify-self: end;
   grid-area: col1;
@@ -961,14 +955,12 @@ picture img {
 }
 .needit__layout__col3 {
   height: auto;
-  width: -moz-fit-content;
   width: fit-content;
   justify-self: start;
   grid-area: col3;
 }
 .needit__layout__col__card {
   width: auto;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .needit__card {
@@ -977,7 +969,6 @@ picture img {
   justify-items: center;
   justify-content: start;
   grid-template-rows: auto auto auto;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .needit__card-image {
@@ -1026,7 +1017,6 @@ picture img {
     grid-auto-flow: column;
     grid-template-areas: "col1" "col3" "col2";
   }
-<<<<<<< HEAD
   .needit__card__content-text {
     width: 310px;
     font-size: 14px;
@@ -1052,8 +1042,6 @@ picture img {
   .needit__card__content-title {
     width: 310px;
   }
-}/*# sourceMappingURL=main.css.map */
-=======
 }
 .services {
   position: relative;
@@ -1557,5 +1545,4 @@ picture img {
     width: 80%;
     justify-content: space-around;
   }
-}
->>>>>>> 5ebdd6879ac01f834086397e92095d9e04be41fb
+}/*# sourceMappingURL=main.css.map */
