@@ -68,14 +68,15 @@
           </div>
         </div>
       </nav>
-
       <div class="burger">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </header>
+    
     <main>
+      
       <section id="first" class="first">
         <div class="first__digits"></div>
         <div class="mountains">
@@ -133,7 +134,8 @@
         <div class="first__transition"></div>
       </section>
 
-      <section id="needIt" class="needIt">
+      <!--
+              <section id="needIt" class="needIt">
         <div class="needit__container">
           <div class="title needit__title"><span>Кому нужен сайт</span></div>
           <div class="title needit__subtitle"><span>и что он даст?</span></div>
@@ -244,7 +246,26 @@
           </div>
         </div>
       </section>
+      -->
 
+      <section class="needIt">
+        <div class="needIt__title">
+          <p>Кому нужен сайт</p>
+          <h2>И что он даст ?</h2>
+        </div>
+        <div class="container">
+          <div class="needIt__left">
+            <div class="accord-card">
+              <img src="" alt="">
+              <div class="accord-card__title"></div>
+            </div>
+            
+          </div>
+          <div class="needIt__center"></div>
+          <div class="needIt__right"></div>
+        </div>
+      </section>
+      
       <section id="portfolio" class="portfolio"></section>
 
       <section id="services" class="services">
@@ -741,13 +762,13 @@
             <ul>
               <li><a href="#">Портфолио;</a></li>
               <li><a href="#">Услуги</a></li>
+              <!-- здесь придется добавить костыль в виде таких шляп &#8195; чтобы абзацы адаптивно отображались при увеличении viewport  -->
               <li><a href="#">Обратная связь &#8195; &#8195; &#8195; &#8195; &#8195; &#8195;</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
           </div>
         </div>
-        
         <div class="footer__right">
           <div class="footer__contacts">
             <h3 class="footer__h3">Контакты</h3>
@@ -793,8 +814,6 @@
 
         
       </div>
-
-      
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./src/script/script.js"></script>

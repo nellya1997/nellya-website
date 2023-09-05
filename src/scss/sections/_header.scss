@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   height: 60px;
-  border: $myBorder;
   @include flexy(row);
 
   li {
@@ -83,7 +82,7 @@
         @include flexy(row, space-between);
       }
 
-      .contacts {
+      .address-badge {
         display: none;
       }
       .contact-badge {
@@ -119,6 +118,7 @@
   .header {
     .nav {
       &_active {
+        //height: max-content;
         height: 100vh;
         overflow-y: scroll;
       }
