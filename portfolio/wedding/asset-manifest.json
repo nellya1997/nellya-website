@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4b7b5557.css",
+    "main.js": "/static/js/main.8fc50f75.js",
+    "static/media/vibes.ttf": "/static/media/vibes.ad9bc147c39f7cd3f661.ttf",
+    "static/media/background.png": "/static/media/background.b9a7a7d9c9ebc2210074.png",
+    "static/media/vibes.woff": "/static/media/vibes.d4bb180ac379893bde65.woff",
+    "static/media/gilroy-medium.ttf": "/static/media/gilroy-medium.f9f832b0ed3f1ab138c9.ttf",
+    "static/media/vibes.woff2": "/static/media/vibes.493643225ef0ae729039.woff2",
+    "static/media/gilroy-medium.woff2": "/static/media/gilroy-medium.e180aa877a88f98a176d.woff2",
+    "static/media/gilroy-medium.woff": "/static/media/gilroy-medium.0c41c1266acf5fb78a8a.woff",
+    "static/media/gilroy-semibold.woff": "/static/media/gilroy-semibold.efad755be80393fc9bce.woff",
+    "static/media/gilroy-regular.woff": "/static/media/gilroy-regular.7f309a833853cf136582.woff",
+    "static/media/gilroy-semibold.woff2": "/static/media/gilroy-semibold.7533ab22092d66664382.woff2",
+    "static/media/gilroy-regular.woff2": "/static/media/gilroy-regular.55249888aaba2c614431.woff2",
+    "index.html": "/index.html",
+    "main.4b7b5557.css.map": "/static/css/main.4b7b5557.css.map",
+    "main.8fc50f75.js.map": "/static/js/main.8fc50f75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b7b5557.css",
+    "static/js/main.8fc50f75.js"
+  ]
+}
