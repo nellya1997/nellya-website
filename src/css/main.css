@@ -412,6 +412,16 @@ picture img {
   overflow: hidden;
 }
 
+@media (min-width: 1439px) {
+  html {
+    font-size: 20px;
+  }
+}
+.container {
+  margin: 0 auto;
+  width: 80.625%;
+}
+
 .contact-badge {
   display: flex;
   flex-direction: column;
