@@ -77,6 +77,10 @@
     span {
       @include fonty(1rem, 600, 1.25rem);
     }
+
+    .deco-robot {
+      display: none;
+    }
   }
 }
 
@@ -111,6 +115,9 @@
     &__down {
       span {
         display: none;
+      }
+      .deco-robot {
+        display: initial;
       }
     }
 

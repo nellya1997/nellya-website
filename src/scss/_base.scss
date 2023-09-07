@@ -35,17 +35,7 @@
     url('../font/PlayfairDisplay-VariableFont.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
-
 }
-
-
-
-html {
-  // font-size: calc($root-FS / 16px) * 100%;
-}
-
-
-
 
 * {
   box-sizing: border-box;
@@ -83,4 +73,14 @@ picture {
 
 .stop-scroll {
   overflow: hidden;
+}
+
+@media (min-width: 1439px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.container {
+  @include centry(80.625%);
 }

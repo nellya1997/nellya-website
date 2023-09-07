@@ -412,6 +412,16 @@ picture img {
   overflow: hidden;
 }
 
+@media (min-width: 1439px) {
+  html {
+    font-size: 20px;
+  }
+}
+.container {
+  margin: 0 auto;
+  width: 80.625%;
+}
+
 .contact-badge {
   display: flex;
   flex-direction: column;
@@ -622,7 +632,7 @@ picture img {
     justify-content: space-between;
     align-items: center;
   }
-  .header .nav .contacts {
+  .header .nav .address-badge {
     display: none;
   }
   .header .nav .contact-badge {
@@ -664,7 +674,7 @@ picture img {
   background: url("../img/first/digitsMobile.png") center/100% 100% no-repeat;
   position: absolute;
   top: -60px;
-  z-index: 0;
+  z-index: -1;
 }
 .first .mountains {
   width: 100%;
@@ -712,6 +722,7 @@ picture img {
   font-weight: 600;
   width: calc(300px + 65 * (100vw - 375px) / 1440);
   height: calc(40px + 13 * (100vw - 375px) / 1440);
+  margin: 0 auto;
 }
 .first__content {
   position: relative;
@@ -1510,6 +1521,9 @@ picture img {
   font-weight: 600;
   line-height: 1.25rem;
 }
+.footer__down .deco-robot {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .footer {
@@ -1538,6 +1552,9 @@ picture img {
   .footer__down span {
     display: none;
   }
+  .footer__down .deco-robot {
+    display: initial;
+  }
   .footer__contacts li {
     padding-top: 10px;
   }
@@ -1550,4 +1567,4 @@ picture img {
     width: 80%;
     justify-content: space-around;
   }
-}/*# sourceMappingURL=main.css.map */
+}

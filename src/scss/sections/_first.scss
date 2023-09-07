@@ -11,7 +11,7 @@ $pictureMobileHeight: 55vh;
       no-repeat;
     position: absolute;
     top: -60px;
-    z-index: 0;
+    z-index: -1;
   }
 
   .mountains {
@@ -67,6 +67,7 @@ $pictureMobileHeight: 55vh;
       font-weight: 600;
       width: calc(300px + 65 * ((100vw - 375px) / 1440));
       height: calc(40px + 13 * ((100vw - 375px) / 1440));
+      margin: 0 auto;
     }
   }
 
