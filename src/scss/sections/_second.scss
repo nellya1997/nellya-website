@@ -1,0 +1,120 @@
+.second {
+  padding-top: 4em;
+
+  &-title {
+    @include centry(54%);
+    font-size: rem(22px);
+    line-height: rem(26px);
+    font-weight: 500;
+
+    &__violet {
+      font-family: $fontAccent;
+      font-size: 40px;
+      line-height: 53px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $titleColor;
+    }
+
+    &__up,
+    &__down {
+      @include flexy(row, space-evenly);
+    }
+
+    &__up {
+      span {
+        &:first-child {
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__down {
+      gap: 0.6em;
+    }
+
+    .foxyBadge {
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      font-weight: 600;
+      width: calc(231px + 58 * ((100vw - 375px) / 1440));
+      padding: 0.5em 0em;
+    }
+  }
+
+  .second-up {
+    @include flexy(row, space-between);
+    padding: 3em 0em;
+
+    &__violet {
+      font-size: rem(17px);
+      line-height: rem(20px);
+      font-weight: 700;
+      color: $titleColor;
+    }
+
+    &__text {
+      @include flexy(column, space-between, flex-start);
+      width: 49.56%;
+      gap: 0.9em;
+
+      font-size: rem(17px);
+      line-height: rem(20px);
+
+      p {
+        &:nth-child(3),
+        &:nth-child(4) {
+          font-size: rem(18px);
+          line-height: rem(20px);
+          font-weight: 700;
+          color: $boldFontColor;
+        }
+      }
+    }
+
+    &__picture {
+      position: relative;
+
+      div {
+        position: absolute;
+        top: 28%;
+        left: 9.85%;
+        z-index: 1;
+
+        .foxyBadge {
+          font-family: $fontAccent;
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 700;
+          display: block;
+          text-align: center;
+          padding: 0.4em 1em;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -7px;
+            width: 30px;
+            height: 30px;
+            background: url('../img/second/clip.png') center/cover no-repeat;
+          }
+        }
+
+        span {
+          &:nth-child(2) {
+            display: block;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 0.5em;
+          }
+        }
+      }
+    }
+  }
+}

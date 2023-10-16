@@ -18,11 +18,11 @@
 }
 
 @font-face {
-  font-weight: 600;
   font-family: 'Gilroy';
   /* Соответствует значению "почти" bold )) */
   src: url('../font/gilroy-semibold.woff2') format('woff2'),
     url('../font/gilroy-semibold.woff') format('woff');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -42,11 +42,16 @@
   margin: 0;
   padding: 0;
 }
-/*
+
 html {
   font-size: 16px;
 }
-*/
+
+p {
+  margin-block: unset;
+  margin-inline: unset;
+}
+
 body {
   font-family: 'Gilroy';
   font-weight: 400;

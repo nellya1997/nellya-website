@@ -42,28 +42,22 @@
   window.addEventListener('resize', checkCurrentWidth);
 })();
 
-/*               SLIDER                 */
-/* this is my code I was using in Tattoo web-site, it shall be refactored;
-const swiperPortfolio = new Swiper('.portfolio-bottom__swiper', {
-  //direction: 'horizontal',
-  loop: true,
-  slidesPerView: 1,
-  allowSlideNext: true,
-  allowSlidePrev: true,
-  allowTouchMove: true,
-  grabCursor: true,
-  spaceBetween: 20,
-  speed: 1000,
-  autoplay: {
-    delay: 4000
-  },
+const clients = () => {
+  //accordeon:
+  const details = document.querySelectorAll('.clients details');
 
-  navigation: {
-    nextEl: '.custom-next',
-    prevEl: '.custom-prev',
-  },
-});
-*/
+  resizeClients();
+
+  function resizeClients() {
+    window.screen.width < 1240
+      ? details.forEach((el) => (el.open = false))
+      : details.forEach((el) => (el.open = true));
+  }
+
+  window.addEventListener('resize', resizeClients);
+};
+
+clients();
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 2, // Display two slides at a time

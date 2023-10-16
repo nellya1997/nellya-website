@@ -1,0 +1,8 @@
+.h2 {
+  font-family: $fontAccent;
+  font-size: calc(25px + 15 * ((100vw - 375px) / 1440));
+  font-weight: 700;
+  color: $titleColor;
+  line-height: rem(53px);
+  text-transform: uppercase;
+}
